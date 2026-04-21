@@ -10,6 +10,6 @@ public class UserController {
 
     @GetMapping
     public String test() {
-        return "Vishal is on AWS! Living above the cloud";
+        return "Vishal is on AWS! Living above the cloudd";
     }
 }
