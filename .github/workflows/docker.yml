@@ -44,9 +44,9 @@ jobs:
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/demo:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/demo:0.0.1
-          - name: Deploy to EC2
-  
-      - uses: appleboy/ssh-action@v1.0.0
+      
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
